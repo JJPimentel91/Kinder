@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Schedule</title>
+  <link href="../../style/bootstrap-glyphicons.css" type="text/css" rel="stylesheet" />
+  <link href="../../style/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="images/icons/logo.ico"/>
+</head>
+<body class="font" id="index-item">
+
+  <div class="well well-lg well-green">
+    <div class="container-fluid">
+      <a href="../../index.html"><div class="col-sm-6 nav-title nav-title-item"><h1>Share & Train</h1></div></a>
+      <a href="../../index.html"><div class="col-sm-2 nav-text">Home</div></a>
+      <a href="../trainers.html"><div class="col-sm-2 nav-text">Trainers</div></a>
+      <a href="../schedule.html"><div class="col-sm-2 nav-text">Schedule</div></a>
+    </div>
+  </div>
+
+  <div class="container-fluid main-trainer margin-bottom">
+    <div class="container pad-top pad-bottom">
+      <div class="row margin-bottom-sm"><!--start of CALENDAR ITEM-->
+        <div class="col-sm-2 calendar-item line">
+          <div class="col-sm-12">
+            <h1 class="day"><big>4</big></h1>
+            <h3 class="month"><big>APR</big></h3>
+          </div>
+        </div><!--end of DATE-->
+        <div class="col-sm-8 calendar-item">
+          <h3 class="title-details"><big>Mainframe Advanced Training</big></h3>
+          <p class="left"><big><span class="glyphicon glyphicon-calendar"></span> Wednesday  
+          <span class="glyphicon glyphicon-time"></span> 1:30 PM - 3:00 PM  
+          <span class="glyphicon glyphicon-map-marker"></span> Training Room 1 
+          <span class="glyphicon glyphicon-user"></span> Maulik Patel</big></p>
+          <p class="left"><big>Session 3 for advanced usage of Mainframe.</big></p>
+        </div><!--end of INFORMATION-->
+      </div><!--end of CALENDAR ITEM-->
+
+      <div class="container-fluid pad-top">
+        <div class="col-sm-5">
+          <img src="../../images/maulik.png" class="bg-thumb-item margin-left">
+        </div>
+        <div class="col-sm-5">
+          <h2>Maulik Patel</h2>
+          <p class="grey"><i>IT Service Management</i></p>
+          <p><b>Technical Profile -</b> IT Experience - 11 years. His current role is Major Incident Management Lead and counts with an ITIL V3 Foundation Certification<br><br>
+          <b>Core Technology -</b>  IT Infrastructure Support  -  IT Service Management, Command Center Operations, Desktop and Antivirus Product Support<br><br>
+          <b>Domain -</b> Incident, Problem and Major Incident Management, Event Monitoring and Management.<br><br></p>
+        </div>
+      </div><!--end of trainer details-->
+
+      <div class="container pad-top pad-bottom">
+        <h1 class="text-center">Nominate</h1>
+        <p class="pad-bottom margin-left margin-right text-center">Send an email to the Share & Train admin. Please fill out the form FIRST, click the convert button then click on copy so that you can then easily paste it in your email. Emails need to be sent to <b>rameshkumar4.s@tcs.com</b>. Subject line must be "Share and Train new nomination."</p>
+        <div ng-app="">
+          <div class="col-sm-5 margin-left-form">
+            <form id="myForm">
+              <input type="text" ng-model="name" placeholder="Managers Name" class="input-form">
+              <input type="text" ng-model="nom_name" placeholder="Nominee Name" class="input-form">
+              <input type="text" ng-model="nom_num" placeholder="Nominee Employee Num" class="input-form">
+              <input type="text" ng-model="phone" placeholder="Nominee Phone Number" class="input-form"> 
+              <input type="radio" ng-model="train" value="Mainframe Advanced Training" checked id="train">        
+            </form>
+          </div>
+          <div class="col-sm-5">
+            <textarea class="text-area js-copytextarea" id="textArea" placeholder="Template will generate here">Hello Ramesh, 
+
+This is {{name}} and I would like to present a nomination for this training: 
+
+Nominee Name: {{nom_name}}
+Employee Number: {{nom_num}}
+Phone Number: {{phone}}
+Training Name: {{train}}
+
+You can reach me if you have any further doubts.
+
+Regards,</textarea> 
+            <button class="input-btn js-textareacopybtn" onclick=""><span class="glyphicon glyphicon-copy"></span> Copy</button> 
+          </div>
+        </div>
+      </div><!--end of nominate-->
+    </div><!--end of container-->
+  </div><!--end of container-fluid-->
+
+  <script src="js/item.js" type="text/javascript"></script>
+
+  <!--FOOTER-->
+  <section class="index-link">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="link-area">
+            <h3>Share & Train</h3>
+            <p class="white">"<i>A place where you can gain knowledge, created for sharing with others."</i></p>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+          <div class="link-area">
+            <h3>Site</h3>
+            <ul>
+              <li><a href="#"> Home</a></li>>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="link-area">
+            <h3></h3>
+            <ul>
+              <li><a href="#" class="invisible"> Trainers</a></li>
+              <li><a href="subsites/trainers.html"> Trainers</a></li>
+              <li><a href="#" class="invisible"> Schedule</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="link-area">
+            <h3 class="invisible">Learn More</h3>
+            <ul>
+              <li><a href="subsites/schedule.html"> Schedule</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="index-social">
+    <div class="container foot-sm">
+      <div class="row index-social-link text-center">
+        <p class="copy-c">JJ Pimentel</p>
+      </div>
+    </div>
+  </section>
+  <!--END OF FOOTER-->
+
+</body>
+</html>
